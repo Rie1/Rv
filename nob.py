@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 vipro = LINETCR.LINE()
 #vipro.login(qr=True)
-vipro.login(token='ErDw7dsIUAphYDURVeAe.ccys8tuFvu++SAeG8YQBdG.Vo/S9B/PyVsTEO2Kzd1Pu5nyitqmsbhBdgJl7HKPYOA=')
+vipro.login(token='ErzfhdaQDcSVPdMbspDa./zA3eWqpAYcuHPFcSOdegG.++LU1tgiQOTYd/youOABguL40KbUeA/kJu7p3ptki+4=')
 vipro.loginResult()
 print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
@@ -267,13 +267,12 @@ responsename = vipro.getProfile().displayName
 wait = {
     "LeaveRoom":True,
     "Bot":True,
-    "AutoJoin":False,
+    "AutoJoin":True,
     "AutoJoinCancel":False,
     "memberscancel":30,
     "Members":1,
     "AutoCancel":False,
     "AutoKick":False,
-    'pap':{},
     'invite':{},
     'steal':{},
     'gift':{},
@@ -2759,10 +2758,7 @@ def bot(op):
                                 print error
                                 vipro.sendText(msg.to,"Upload image failed.")
 
-            elif msg.text.lower() in ["pap owner","pap creator"]:
-                                link = ["http://dl.profile.line-cdn.net/0hFR-rB8h-GX0QCzWZMOZmKixOFxBnJR81aG9eSTUNREhtOVYqJWgFSWYDR05vOwp7K2sCGTELRUVo"]
-                                pilih = random.choice(link)
-                                vipro.sendImageWithURL(msg.to,pilih)
+           
 
  
             elif "Spam: " in msg.text:
