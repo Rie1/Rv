@@ -12,9 +12,9 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 vipro = LINETCR.LINE()
 #vipro.login(qr=True)
-vipro.login(token='EqAjkBZ9OWWLDSzIPSOe.ccys8tuFvu++SAeG8YQBdG.svBD/OZ5GQ4r1e7p3JCkpnWIQLOjIWmYvyF9huDtdz0=')
+vipro.login(token='EsiWrnLqeDtVBaktCCJ1.g1sj2y1fS6XEZKLnYYm80q.NThl3u5ItA3muHF32KoxTFX9Yv4VHcVFCHffTVx40VE=')
 vipro.loginResult()
-print "Vipro-Login Success\n\n=====[Sukses Login]====="
+print "Queso-Login Success\n\n=====[Sukses Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
