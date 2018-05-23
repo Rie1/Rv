@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 vipro = LINETCR.LINE()
 #vipro.login(qr=True)
-vipro.login(token='ErzfhdaQDcSVPdMbspDa./zA3eWqpAYcuHPFcSOdegG.++LU1tgiQOTYd/youOABguL40KbUeA/kJu7p3ptki+4=')
+vipro.login(token='EsY0lUFt1NnxeVfbrgHa./zA3eWqpAYcuHPFcSOdegG.lnoSCwmXopr92CjpM68qGPQau4bkF6FLr5yzFpXB5Ws=')
 vipro.loginResult()
 print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
@@ -1584,15 +1584,15 @@ def bot(op):
                 cctv['sidermem'][msg.to] = ""
                 cctv['cyduk'][msg.to]=True
                 wait["Sider"] = True
-                vipro.sendText(msg.to,"Siap On Cek Sider")
+                vipro.sendText(msg.to,"Start scanning reader")
                 
             elif "Sider off" in msg.text:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
-                    vipro.sendText(msg.to, "Cek Sider Off")
+                    vipro.sendText(msg.to, "DONE")
                 else:
-                    vipro.sendText(msg.to, "Heh Belom Di Set")                         
+                    vipro.sendText(msg.to, "Belu di set")                         
 
 
             elif msg.text in ["Status"]:
@@ -2368,7 +2368,7 @@ def bot(op):
 		gid = vipro.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			vipro.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~nad_nad.")
+			vipro.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~akbarr288")
 		    vipro.sendText(msg.to,"Success BC BosQ")
 		else:
 		    vipro.sendText(msg.to,"Khusus Admin")
